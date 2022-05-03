@@ -1,0 +1,104 @@
+<html lang="en">
+    <head>
+        <title>Розширений пошук</title>
+        <style>
+            input[type=text] {
+                border: 1px solid #cccccc; 
+                border-radius: 0px; 
+                -webkit-border-radius: 0px;
+                padding: 1px 8px; 
+                outline: none; 
+                height: 29px; 
+                width: 575px; 
+                color: #000000; 
+                font-size: 12px; 
+            }
+            input[type=submit] {
+                background-color: #4d90fe;
+                border-radius: 3px; 
+                border: 1px;
+                color: #ffffff;
+                padding: 8px 16px;
+                text-decoration: none;
+                /* margin: 4px 2px; */
+                cursor: pointer;
+            }
+            h2 {
+                color: #d93025;
+                margin-left: 50px;
+            }
+            p {
+                color: #000000;
+                margin-left: 30px;
+            }
+            body {
+                font-family: arial,sans-serif;
+            }
+            .grid-container {
+                display: grid;
+                grid-template-columns: 160px 600px auto;
+                padding: 10px;
+            }
+            .grid-item {
+                padding: 20px;
+                font-size: 15px;
+                text-align: left;
+            }
+            .grid-container1 {
+                display: grid;
+                grid-template-columns: 160px 600px auto;
+                padding: 10px;
+            }
+            .grid-item1 {
+                padding: 20px;
+                font-size: 15px;
+                text-align: right;
+            }
+            .line {
+                top: 20%;
+                border-bottom: 1px solid #ebebeb;
+            }
+            label{
+                font-size: 20px;
+                color: #d93025;
+                margin-left: 30px;
+            }               
+        </style>
+        
+    </head>
+    <body> 
+        <form style=" text-align: right; ">
+            <a  href="index.html">Звичайний пошук</a><br>
+            <a  href="google picture.html">Зображення</a>
+        </form>
+
+        <label>Розширений пошук</label>
+        <div class="line"></div>
+        <p>Знайти сторінки, що містять...</p>
+
+
+        <form action="https://google.com/search" method="get"> 
+            <div class="grid-container">
+                <div class="grid-item">усі ці слова:</div>
+                <div class="grid-item"><input type="text" name="as_q"></div>
+                <div class="grid-item">Введіть важливі слова: триколірний рет-тер’єр</div>  
+                <div class="grid-item">точне слово або фразу:</div>
+                <div class="grid-item"><input type="text" name="as_epq"></div>
+                <div class="grid-item">Візьміть точні слова в лапки: "рет-тер’єр"</div>  
+                <div class="grid-item">будь-яке з цих слів:</div>
+                <div class="grid-item"><input type="text" name="as_oq"></div>
+                <div class="grid-item">Введіть OR між усіма потрібними словами: мініатюрні OR стандартні</div>  
+                <div class="grid-item">жодне з цих слів:</div>
+                <div class="grid-item"><input type="text" name="as_eq"></div>
+                <div class="grid-item">Поставте знак мінус перед небажаними словами: -гризун, -"Джек Рассел"</div>  
+            </div> 
+
+            <div class="grid-container1">
+                <div class="grid-item1"></div>
+                <div class="grid-item1"><input type="submit" value="Розширений пошук" ></div>
+                <div class="grid-item1"></div>  
+            </div>
+        </form>
+    </body>
+<html>
+    

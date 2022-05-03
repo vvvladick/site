@@ -1,0 +1,55 @@
+<html lang="en">
+    <head>
+        <title>Home page</title>
+        <style>
+            input[type="text"] {
+                border: 1px solid #cccccc; 
+                border-radius: 3px; 
+                -webkit-border-radius: 20px;
+                padding: 16px 32px; 
+                outline: none; 
+                height: 36px; 
+                width: 580px; 
+                color: #000000; 
+                font-size: 13px; 
+            }
+            input[type=submit] {
+
+                background-color: #f5f7f5;
+                border-radius: 3px; 
+                border: 1px;
+                color: #000000;
+                padding: 8px 16px;
+                text-decoration: none;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            form {
+                font-family: "arial,sans-serif;";
+                clear: both;
+                text-align: center;
+                position: fixed;
+                top: 45%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+        </style>
+    </head>
+    <body>
+        <div style=" text-align: right; "> 
+            <a  href="google picture.html">Зображення</a><br>
+            <a  href="google advanced search.html">Розширений пошук</a>
+        </div>    
+
+        <form action="https://google.com/search">
+            <div>
+                <img src="google.jpg" width="270" height="100" alt="Google">          
+            </div>
+            <input type="text" name="q"><br><br>
+            <input type="submit" value="Пошук Google" name="btnK">
+            <input type="submit" value="Мені пощастить" name="btnI">  
+        </form>
+    </body>
+<html>
